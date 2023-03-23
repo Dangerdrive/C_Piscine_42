@@ -1,14 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fde-alen <fde-alen@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/03/09 21:00:53 by fde-alen          #+#    #+#             */
+/*   Updated: 2023/03/22 20:45:36 by fde-alen         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 char	*ft_strcpy(char *dest, char *src)
 {
-	char *copy;
-	copy = dest;
-	while (*src != '\0')
+	int	i;
+
+	i = 0;
+	while (src[i] != '\0')
 	{
-		*copy = *src;
-		src++;
-		copy++;
+		dest[i] = src[i];
+		i++;
 	}
-	*copy = '\0';
-	return dest;
+	dest[i] = '\0';
+	return (dest);
 }

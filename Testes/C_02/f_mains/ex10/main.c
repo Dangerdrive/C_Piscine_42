@@ -8,11 +8,12 @@ int	main(void)
 
 	ft_strlcpy(dest_test, "testando", dest_size);
 	printf("%s\n", dest_test);
-	dest_size = 9;
+	dest_size = 20;
 	ft_strlcpy(dest_test, "testando", dest_size);
 	printf("%s\n", dest_test);
+		printf("%d\n", ft_strlcpy(dest_test, "testando", dest_size));
 }
 
- The purpose of strlcpy is to copy a string 
- while ensuring that the destination buffer is not overflowed,
-  whereas the purpose of strncpy is to copy a fixed number of characters from one string to another.
+//  The purpose of strlcpy is to copy a string 
+//  while ensuring that the destination buffer is not overflowed,
+//   whereas the purpose of strncpy is to copy a fixed number of characters from one string to another.

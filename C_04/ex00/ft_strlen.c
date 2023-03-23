@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fde-alen <fde-alen@student.42.fr>            +#+  +:+       +#+        */
+/*   By: fde-alen <fde-alen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/16 11:57:53 by felippe           #+#    #+#             */
-/*   Updated: 2023/03/16 11:57:53 by felippe          ###   ########.fr       */
+/*   Created: 2023/03/20 21:48:33 by fde-alen          #+#    #+#             */
+/*   Updated: 2023/03/20 21:48:36 by fde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strlen(char *str)
 {
-int i;
+	int	i;
 
-i = 0;
-while(str[i] != '\0')
+	i = 0;
+	while (str[i] != '\0')
 	{
 		i++;
 	}
-return(i);
+	return (i);
 }

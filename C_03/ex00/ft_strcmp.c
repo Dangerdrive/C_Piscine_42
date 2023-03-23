@@ -3,11 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: felippe <felippe@student.42.fr>            +#+  +:+       +#+        */
+/*   By: fde-alen <fde-alen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/16 18:08:09 by felippe           #+#    #+#             */
-/*   Updated: 2023/03/16 18:08:13 by felippe          ###   ########.fr       */
+/*   Created: 2023/03/22 01:12:00 by fde-alen          #+#    #+#             */
+/*   Updated: 2023/03/22 18:16:27 by fde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2);
+int	ft_strcmp(char *s1, char *s2)
+{
+	int	i;
+
+	i = 0;
+	while (s1[i] != '\0' || s2[i] != '\0')
+	{
+		if (s1[i] != s2[i])
+		{
+			return ((s1[i] - s2[i]));
+		}
+		i++;
+	}
+	return (0);
+}

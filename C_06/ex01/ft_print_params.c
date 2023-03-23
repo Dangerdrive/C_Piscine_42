@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: felippe <felippe@student.42.fr>            +#+  +:+       +#+        */
+/*   By: fde-alen <fde-alen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/15 22:08:11 by felippe           #+#    #+#             */
-/*   Updated: 2023/03/15 22:27:10 by felippe          ###   ########.fr       */
+/*   Created: 2023/03/22 16:20:24 by fde-alen          #+#    #+#             */
+/*   Updated: 2023/03/23 13:06:31 by fde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,30 @@
 
 void	ft_putchar(char c)
 {
-	write(1, &c,1);
+	write(1, &c, 1);
 }
 
 void	ft_putstr(char *str)
 {
-	while (*str != '\0')
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
 	{
-		ft_putchar(*str);
-		str++;
+		ft_putchar(str[i]);
+		i++;
 	}
 }
 
-int		main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
-	int i;
+	int	i;
 
 	i = 1;
 	while (i < argc)
 	{
 		ft_putstr(argv[i]);
-		ft_putstr("\n");
+		ft_putchar('\n');
 		i++;
 	}
 }
