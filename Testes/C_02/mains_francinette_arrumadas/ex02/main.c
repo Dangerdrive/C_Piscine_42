@@ -1,27 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fde-alen <fde-alen@student.42.fr>          +#+  +:+       +#+        */
+/*   By: fsoares- <fsoares-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/22 01:12:00 by fde-alen          #+#    #+#             */
-/*   Updated: 2023/03/22 18:16:27 by fde-alen         ###   ########.fr       */
+/*   Created: 2021/12/08 21:49:12 by fsoares-          #+#    #+#             */
+/*   Updated: 2021/12/08 21:52:49 by fsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
-{
-	int	i;
+#include <stdio.h>
 
-	i = 0;
-	while (s1[i] != '\0' || s2[i] != '\0')
-	{
-		if (s1[i] != s2[i])
-		{
-			return ((s1[i] - s2[i]));
-		}
-		i++;
-	}
-	return (0);
+int	ft_str_is_alpha(char *str);
+
+int main(void)
+{
+	printf("\"abc\": %i\n", ft_str_is_alpha("abc"));
+	printf("\"\": %i\n", ft_str_is_alpha(""));
+	printf("\"abcdasda1d\": %i\n", ft_str_is_alpha("abcdasda1d"));
 }

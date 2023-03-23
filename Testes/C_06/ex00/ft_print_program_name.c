@@ -26,7 +26,7 @@ void	ft_putstr(char *str) //ft_putstr pra escrever uma string.
 	}
 }
 
-int	main(int argc, char **argv) //argc retorna o valor de argumentos. O primeiro argumento é o próprio nome do programa.
+int	main(int argc, char **argv) //argc retorna a quantidade de argumentos. O primeiro argumento é o próprio nome do programa.
 //o segundo argumento é o que vc colocar na frente, uma palavra uma string, etc.
 //E assim por diante. Se vc colocar outra coisa na frente disso, seja palavra ou string será o 3o. e por ai vai.
 {
