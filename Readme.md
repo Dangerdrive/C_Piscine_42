@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Tests/Piscine.png" alt="C Piscine Image">
+  <img src="Tests/Piscine.png" alt="C Piscine Image" width="25%">
 </p>
 
 # C Piscine @ 42SP
